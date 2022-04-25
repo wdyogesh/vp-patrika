@@ -1,5 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/mpg1lamw0vps/public_html/wdyogesh.com/demo_file
-    - /bin/cp -R images $DEPLOYPATH
+    - export DEPLOYPATH=/home/example/public_html/
+    - /bin/rm -Rf $DEPLOYPATH
+    - /bin/mkdir $DEPLOYPATH
+    - /bin/cp -R src/ $DEPLOYPATH
